@@ -12,15 +12,15 @@ function setup() {
 	
 
 	packageSprite=createSprite(width/2, 80, 10,10);
-	packageSprite.addImage(packageIMG)
+	packageSprite = loadImage("package.png")
 	packageSprite.scale=0.2
 
 	helicopterSprite=createSprite(width/2, 200, 10,10);
-	helicopterSprite.addImage(helicopterIMG)
+	helicopterSprite = loadImage("helicopter.png")
 	helicopterSprite.scale=0.6
 
 	groundSprite=createSprite(width/2, height-35, width,10);
-	groundSprite.shapeColor=color(255)
+	
 	var ground_option={
    isStatic : true
 	}
